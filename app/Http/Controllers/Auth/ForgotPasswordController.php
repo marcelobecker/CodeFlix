@@ -29,4 +29,12 @@ class ForgotPasswordController extends Controller
     {
         $this->middleware('guest');
     }
+
+    /**
+     *
+     */
+    public function teste() {
+        $url1 = url(config('app.url').route('password.reset', $this->token, false));
+        $config1 = config('app.url');
+    }
 }
